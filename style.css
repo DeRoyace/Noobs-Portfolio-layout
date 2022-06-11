@@ -26,7 +26,7 @@ h1 {
 #top {
     position: relative;
     background-color: #d4eeea;
-    padding-top: 106px;
+    padding-top: 10px;
 }
 
 .cloud1 {
@@ -61,6 +61,7 @@ h1 {
     border-radius: 160px;
     height: 250px;
     margin-top: 50px;
+    box-shadow: 0 0 10px #cbd9e7, 0 0 20px #192631, 0 0 30px #3a84ca;
 }
 
 h2 {
@@ -184,4 +185,29 @@ a:hover {
     margin: 0;
     padding-bottom: 43px;
     font-size: 20px;
+}
+
+.navbar{
+    background: #d4eeea;
+    text-align: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar a{
+    color: #069A8E;
+}
+
+.navbar a:hover{
+    color: rgba(32, 30, 31, 0.788);
+}
+
+.navbar img{
+    width: 97px;
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    border-radius: 120px;
+    box-shadow: 0 0 10px #3a84ca, 0 0 20px #3a84ca;
+
 }
