@@ -31,14 +31,32 @@ h1 {
 
 .cloud1 {
     position: absolute;
-    left: 70%;
+    right: 10%;
     top: 70px;
 }
 
 
 .cloud2 {
     position: absolute;
-    left: 300px;
+    left: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    #top p{
+        font-size: 2rem;
+    }
+    .mount{
+        width: 70%;
+    }
+    .cloud1{
+        width: 30%;
+    }
+    .cloud2{
+        width: 30%;
+    }
 }
 
 #cnt1 {
@@ -87,6 +105,7 @@ h2 {
     padding-left: 10%;
     padding-right: 10%;
     background: #F3F1F5;
+    overflow-x:auto;
 }
 
 #cnt2 img {
@@ -110,6 +129,7 @@ hr {
     background-color: #63B4B8;
     padding-top: 30px;
     padding-bottom: 80px;
+    overflow-x: auto;
 }
 
 #cnt3 h2 {
@@ -211,4 +231,17 @@ a:hover {
     border-radius: 120px;
     box-shadow: 0 0 10px #3a84ca, 0 0 20px #3a84ca;
 
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar img{
+        width: 60px;
+        left: 20px;
+    }
+    .navbar a{
+        font-size: 18px;
+        padding-right: 0.5rem;
+    }
+    
 }
