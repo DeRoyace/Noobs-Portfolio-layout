@@ -41,24 +41,6 @@ h1 {
     left: 10%;
 }
 
-@media screen and (max-width: 600px) {
-    h1{
-        font-size: 3.5rem;
-    }
-    #top p{
-        font-size: 2rem;
-    }
-    .mount{
-        width: 70%;
-    }
-    .cloud1{
-        width: 30%;
-    }
-    .cloud2{
-        width: 30%;
-    }
-}
-
 #cnt1 {
     background-color: whitesmoke;
     padding: 43px;
@@ -90,29 +72,28 @@ h2 {
     margin-top: 20px;
 }
 
-
-#t1 {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 250;
-    text-align: justify;
-    color: rgb(80, 124, 124);
-}
-
 #cnt2 {
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 90px;
     padding-left: 10%;
     padding-right: 10%;
     background: #F3F1F5;
-    overflow-x:auto;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-sizing: border-box;
+}
+
+.boxes{
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
 }
 
 #cnt2 img {
-    width: 25%;
-    float: left;
-    left: 30px;
-    margin-left: 70px;
+    width: 45%;
 }
 
 hr {
@@ -127,7 +108,7 @@ hr {
 
 #cnt3 {
     background-color: #63B4B8;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 80px;
     overflow-x: auto;
 }
@@ -136,12 +117,12 @@ hr {
     color: azure;
     margin: 0 auto 0 auto;
     position: relative;
-    top: 30px;
+    /* top: 30px; */
 }
 
 .t2 {
     text-align: justify;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 input,
@@ -243,5 +224,52 @@ a:hover {
         font-size: 18px;
         padding-right: 0.5rem;
     }
-    
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    h2{
+        font-size: 43px;
+    }
+    #top p{
+        font-size: 2rem;
+    }
+    .mount{
+        width: 70%;
+    }
+    .cloud1{
+        width: 30%;
+        right: 0%;
+    }
+    .cloud2{
+        width: 30%;
+    }
+
+    #cnt1 img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #cnt1 p{
+        width: 90%;
+    }
+
+    #cnt2{
+        
+    }
+
+    #cnt4 a{
+        display: block;
+        line-height: 0.7;
+        margin: 0 32%;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    input, textarea{
+        width: 200px;
+    }
 }
