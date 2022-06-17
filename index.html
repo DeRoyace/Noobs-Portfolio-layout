@@ -43,53 +43,54 @@
     </div>
     <div class="container" id="cnt2">
         <h2>Skills</h2>
-        <img src="images/coding.png" alt="skills">
-        <!-- Nested tables -->
-        <table id="t1" cellspacing="21">
-            <tr>
-                <td>
-                    <table cellspacing="10">
-                        <tr>
-                            <td>Core Java</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>C programming</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                    </table>
-                </td>
+        <div class="grid-box">
 
-                <td>
-                    <table cellspacing="10">
-                        <tr>
-                            <td>HTML</td>
-                            <td>⭐⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Web design</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Linux</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+            <div class="boxes"><img src="images/coding.png" alt="skills"></div>
+            <!-- Nested tables -->
+
+            <div class="boxes">
+                <table cellspacing="10">
+                    <tr>
+                        <td>Core Java</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>C programming</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="boxes">
+                <table cellspacing="10">
+                    <tr>
+                        <td>HTML</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Web design</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Linux</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <div class="boxes"><img src="images/computer.png" alt="skills"></div> -->
+        </div>
 
     </div>
 
@@ -99,15 +100,16 @@
             <table class="t2" cellspacing="10">
                 <tr>
                     <td><label for="name">Name :</label></td>
-                    <td><input type="text" name="Name"></td>
+                    <td><input type="text" name="Name" placeholder="enter your name"></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email :</label></td>
-                    <td><input type="email" name="Email-id"></td>
+                    <td><input type="email" name="Email-id" placeholder="xyz@example.com"></td>
                 </tr>
                 <tr>
                     <td><label for="msg">Message :</label></td>
-                    <td><textarea name="Message" id="msg" cols="30" rows="1"></textarea></td>
+                    <td><textarea name="Message" id="msg" cols="30" rows="1" placeholder="type you message"></textarea>
+                    </td>
                 </tr>
             </table>
             <input type="submit" value="Submit" id="btn">
