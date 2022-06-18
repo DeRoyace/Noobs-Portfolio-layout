@@ -92,6 +92,10 @@ h2 {
     margin: auto;
 }
 
+#box1, #box2{
+    text-align: left;
+}
+
 #cnt2 img {
     width: 45%;
 }
