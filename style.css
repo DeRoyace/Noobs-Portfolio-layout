@@ -2,7 +2,12 @@ body {
     margin: 0;
     text-align: center;
     font-family: sans-serif;
-    user-select: none; /*not supported for Safari*/
+    /* user-select: none; not supported for Safari */
+}
+
+::selection{
+    background-color:#13756d;
+    color: #cbd9e7;
 }
 
 h1 {
@@ -81,6 +86,11 @@ h2 {
     background: #F3F1F5;
 }
 
+progress{
+    width: 160px;
+    height: 25px;
+}
+
 .grid-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -133,7 +143,7 @@ hr {
 input,
 textarea {
     background-color: rgb(140, 207, 207);
-    border-radius: 25px;
+    border-radius: 10px;
     border: #ffffffd2 solid;
     width: 270px;
     height: 34px;
@@ -141,6 +151,12 @@ textarea {
     padding-right: 10px;
     color: rgba(0, 0, 0, 0.692);
     font-size: 20px;
+    outline: none;
+}
+
+textarea{
+    height: auto;
+    border-radius: 15px;
 }
 
 label {
@@ -148,6 +164,7 @@ label {
     font-weight: 700;
     color: rgba(0, 0, 0, 0.678);
 }
+
 
 td {
     line-height: 2;
@@ -158,16 +175,22 @@ td {
     font-size: 23px;
     width: 115px;
     height: 43px;
+    border-radius: 25px;
     background: linear-gradient(#16cfc0, #13756d);
+    cursor: pointer;
 }
 
-#btn:hover {
-    cursor: pointer;
+#btn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+}
+
+#btn:active {
     background: linear-gradient(#13756d, #16cfc0);
 }
 
 #cnt4 {
     background: #069A8E;
+    padding: 50px;
 }
 
 a {
@@ -177,19 +200,13 @@ a {
     padding: 20px;
 }
 
-.links {
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
-
 a:hover {
     color: rgba(32, 30, 31, 0.788);
 }
 
 .foot {
     color: #023a1b;
-    margin: 0;
-    padding-bottom: 43px;
+    margin: 50px auto 0px;
     font-size: 20px;
 }
 
