@@ -20,9 +20,9 @@
     <nav class="navbar">
         <img src="images/boy.png" alt="">
         <div class="menu">
-            <a href="#cnt1" class="links">About</a>
-            <a href="#cnt2" class="links">Skills</a>
-            <a href="#cnt3" class="links">Contact</a>
+            <a href="#cnt1" class="nav-links">About</a>
+            <a href="#cnt2" class="nav-links">Skills</a>
+            <a href="#cnt3" class="nav-links">Contact</a>
         </div>
     </nav>
 
@@ -47,24 +47,28 @@
 
             <div class="boxes"><img src="images/coding.png" alt="skills"></div>
             <!-- Nested tables -->
-
+            
             <div class="boxes" id="box1">
                 <table cellspacing="10">
                     <tr>
                         <td>Core Java</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐⭐</td> -->
+                        <td><progress  value="70" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>C programming</td>
-                        <td>⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐</td> -->
+                        <td><progress  value="55" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>C++</td>
-                        <td>⭐⭐</td>
+                        <!-- <td>⭐⭐</td> -->
+                        <td><progress  value="45" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>Python</td>
-                        <td>⭐⭐</td>
+                        <!-- <td>⭐⭐</td> -->
+                        <td><progress  value="50" max="100"></progress></td>
                     </tr>
                 </table>
             </div>
@@ -73,19 +77,23 @@
                 <table cellspacing="10">
                     <tr>
                         <td>HTML</td>
-                        <td>⭐⭐⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐⭐⭐</td> -->
+                        <td><progress  value="85" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>CSS</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐⭐</td> -->
+                        <td><progress  value="60" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>Web design</td>
-                        <td>⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐</td> -->
+                        <td><progress  value="75" max="100"></progress></td>
                     </tr>
                     <tr>
                         <td>Linux</td>
-                        <td>⭐⭐⭐</td>
+                        <!-- <td>⭐⭐⭐</td> -->
+                        <td><progress  value="70" max="100"></progress></td>
                     </tr>
                 </table>
             </div>
@@ -107,8 +115,8 @@
                     <td><input type="email" name="Email-id" placeholder="xyz123@example.com"></td>
                 </tr>
                 <tr>
-                    <td><label for="msg">Message :</label></td>
-                    <td><textarea name="Message" id="msg" cols="30" rows="1" placeholder="type your message"></textarea>
+                    <td><label for="msg" class="msg">Message :</label></td>
+                    <td><textarea name="Message" id="msg" cols="30" rows="5" placeholder="type your message"></textarea>
                     </td>
                 </tr>
             </table>
